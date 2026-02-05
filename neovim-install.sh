@@ -1,4 +1,6 @@
-apt install git -y
+sudo apt update
+
+sudo apt install -y git curl build-essential
 cd /tmp
 wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz
 tar xzf nvim-linux-x86_64.tar.gz
@@ -8,7 +10,5 @@ source ./bashrc
 rm /tmp/nvim-linux-x86_64.tar.gz
 
 echo "Install Lazyvim"
-touch ~/.config/nvim/init.lua
-cd /tmp
-wget https://raw.githubusercontent.com/Querden974/config-setup/refs/heads/main/lazyvim_single.lua
-cp lazyvim_single.lua ~/.config/nvim/init.lua
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+

@@ -10,5 +10,5 @@ rm /tmp/nvim-linux-x86_64.tar.gz
 echo "Install Lazyvim"
 touch ~/.config/nvim/init.lua
 cd /tmp
-wget https://github.com/Querden974/config-setup/blob/main/lazyvim_single.lua
+wget https://raw.githubusercontent.com/Querden974/config-setup/refs/heads/main/lazyvim_single.lua
 cp lazyvim_single.lua ~/.config/nvim/init.lua
